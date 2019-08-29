@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_29_024441) do
+ActiveRecord::Schema.define(version: 20180304213258) do
 
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -24,23 +24,11 @@ ActiveRecord::Schema.define(version: 2019_08_29_024441) do
     t.string "condition"
     t.string "finish"
     t.string "title"
-    t.decimal "price"
+    t.decimal "price", precision: 5, scale: 2, default: "0.0"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image"
     t.integer "user_id"
-  end
-
-  create_table "insturments", force: :cascade do |t|
-    t.string "brand"
-    t.string "model"
-    t.text "description"
-    t.string "condition"
-    t.string "finish"
-    t.string "title"
-    t.integer "price"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "line_items", force: :cascade do |t|
@@ -59,6 +47,11 @@ ActiveRecord::Schema.define(version: 2019_08_29_024441) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
