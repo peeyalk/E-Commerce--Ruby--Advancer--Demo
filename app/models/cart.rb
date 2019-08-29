@@ -1,5 +1,6 @@
 class Cart < ApplicationRecord
   has_many :line_items, dependent: :destroy
+  belongs_to :users
 
   def add_instrument(instrument)
     current_item = line_items.find_by(instrument_id: instrument.id)
