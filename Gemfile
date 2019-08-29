@@ -43,6 +43,7 @@ gem 'gravatar_image_tag'
 gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
 gem 'number_to_yen'
+
 # End
 
 group :development, :test do
