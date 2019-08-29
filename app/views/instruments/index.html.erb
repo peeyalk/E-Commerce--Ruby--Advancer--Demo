@@ -38,7 +38,7 @@
          <%= link_to 'Delete', instrument, method: :delete, data: { confirm: "Are you sure ?" }, class: "button is-small" %>
 
          <%else %>
-         <%= button_to 'Add to cart', line_items_path(instrument_id: instrument), class: 'button is-warning add-to-cart' %>
+         <%= button_to 'Add to cart', line_items_path(instrument_id: instrument), class: 'button is-warning add-to-cart text-center' %>
 
       <% end %>
 
