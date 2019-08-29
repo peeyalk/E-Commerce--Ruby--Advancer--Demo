@@ -1,19 +1,13 @@
-class RegistrationsController < Device::RegistrationsController
+class RegistrationsController < Devise::RegistrationsController
 
+ private
 
-  # protect_from_forgery with: :exception
+ def sign_up_params
+  params.require(:user).permit(:name, :email, :password, :password_confirmation)
+ end
 
-  # before_action :configure_permitted_parameters, if: :devise_controller?
-
-  private
-
-  def sign_up_params
-    param.require(:user).permit(:name, :email, :password, :password_confirmation)
-  end
-
-  def account_update_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation, :current_password)
-  end
-
+ def account_update_params
+  params.require(:user).permit(:name, :email, :password, :password_confirmation, :current_password)
+ end
 
 end

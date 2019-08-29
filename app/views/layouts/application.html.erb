@@ -28,7 +28,6 @@
             <h1 class="title is-5">Don Quijote</h1>
           <% end  %>
           <%= image_tag ( "donki.png"),  style:"min-width: 300px; min-height: 60px"%>
-
         <% end  %>
       <div class="navbar-burger burger" data-target="navbar">
         <span></span>
@@ -42,10 +41,8 @@
           <div class="navbar-item">
             <div class="field is-grouped">
 
-
-            <% if false %>
             <% if total_cart_items %>
-              <%= link_to cart_path(@cart), class:"navbar-item button is-warning" do %>
+              <%= link_to cart_path(@cart), class:"navbar-item button is-warning", style:"margin-right: 5px" do %>
               <span class="icon is-small">
                 <i class="fa fa-shopping-cart"></i>
               </span>
@@ -54,11 +51,11 @@
                 </span>
               <% end %>
             <% end %>
-            <% end %>
 
             <% if user_signed_in? %>
               <%= link_to 'Sell', new_instrument_path, class: "navbar-item button is-warning", style:"margin-right: 5px" %>
-              <div class="navbar-item has-dropdown is-hoverable" >
+
+              <div class="navbar-item has-dropdown is-hoverable">
                 <%= link_to 'Account', edit_user_registration_path, class: "navbar-link button is-warning" %>
                 <div class="navbar-dropdown is-right">
                   <%= link_to "Update profile", edit_user_registration_path, class:"navbar-item" %>
@@ -67,7 +64,7 @@
               </div>
             <% else %>
 
-            <%= link_to "Sign In", new_user_session_path, class:"navbar-item button is-warning" %>
+            <%= link_to "Sign In", new_user_session_path, class:"navbar-item button is-warning", style:"margin-right: 5px" %>
             <%= link_to "Sign up", new_user_registration_path, class:"navbar-item button is-warning"%>
 
             <% end %>

@@ -34,8 +34,11 @@ $link-hover: #222;
 
   .instrument {
     padding: 10px;
+    border-left: 0;
+    border-top: 0;
     position: relative;
     min-height: 500px;
+    min-height: 375px;
 
     .title {
       line-height: 1.6rem;
@@ -50,6 +53,7 @@ $link-hover: #222;
   .instrument-thumb {
     position: relative;
     max-height: 230px;
+    max-height: 150px;
     overflow: hidden;
 
     img {
@@ -67,7 +71,6 @@ $link-hover: #222;
     }
   }
 }
-
 .navbar-menu {
   background-color: #232f3e;
 }
