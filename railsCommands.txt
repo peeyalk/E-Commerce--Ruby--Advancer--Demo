@@ -1,0 +1,27 @@
+1. Create new project: $ rails new ProjectName #sqlite3 prerequisite
+2. Start rails server: $ rails server
+
+3. Create a Controller with an Action: $ rails generate controller Welcome index
+4. Create MODEL VIEW and CONTROLLER: $ rails generate scaffold {ModelName} {attibute}:{type}
+4.1 Create Resource(only model and empty controller): $rails generate resource {ModelName} {ReferModel}:references {attibute}:{type}
+4.2 Create Mailer: $ rails generate mailer {MailerName} {action1..action2}
+4.3 Create action cable(websocket based real time update): $ rails generate channel 
+
+
+5. Import model to database (migration): $ rails db:migrate
+
+6. Db migration rollback: $ rails db:rollback
+
+7. Delete Scaffold: $rails destroy scaffold name
+
+8. Show all routes: $ rails routes
+
+
+
+Creting MODEL CONSTRAINTS:
+-----------------------------
+1. Required: validates_presence_of :{attibute}
+
+
+Relation:
+1. One to Many: #has_many :{modelName}, #belongs_to :{modelName} 
