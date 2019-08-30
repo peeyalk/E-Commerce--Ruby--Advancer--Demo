@@ -2,7 +2,7 @@
 
 **Authors:**
 
-_Khondokar Hashibul Islam_
+_Khondokar Hashibul Islam___
 _Joy Julian Gomes_
 
 
@@ -29,12 +29,12 @@ _Joy Julian Gomes_
 
 # Screen Shots:
 
-![](screenshots/1. index.png)
-![](screenshots/2. Registration.png)
-![](screenshots/3. Registration.png)
-![](screenshots/4. Login.png)
-![](screenshots/5. ItemAddedToCart.png)
-![](screenshots/6. ItemAddedToCart.png)
-![](screenshots/7. CheckOutError.png)
-![](screenshots/8. OrderPlaced.png)
+![](screenshots/1.index.png)__
+![](screenshots/2.Registration.png)__
+![](screenshots/3.Registration.png)__
+![](screenshots/4.Login.png)__
+![](screenshots/5.ItemAddedToCart.png)__
+![](screenshots/6.ItemAddedToCart.png)__
+![](screenshots/7.CheckOutError.png)__
+![](screenshots/8.OrderPlaced.png)
 
