@@ -44,6 +44,6 @@ _Joy Julian Gomes_
 ![](screenshots/5.ItemAddedToCart.png)__
 ![](screenshots/6.ItemAddedToCart.png)__
 ![](screenshots/7.CheckOutError.png)__
-![](screenshots/8.OrderPlaced.png)
+![](screenshots/8.OrderPlacedNew.png)
 
 #
