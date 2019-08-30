@@ -1,6 +1,7 @@
 class CartsController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :invalid_cart
   before_action :set_cart, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:check_out]
 
   # GET /carts
   # GET /carts.json
@@ -63,10 +64,16 @@ class CartsController < ApplicationController
     end
   end
 
-  # check_out_cart?cart_id=id
+  # check_out_cart/;
   def check_out
-    @cart = Cart.find(params[:cart_id])
-    
+  @cart = Cart.find(params[:cart_id])
+    OrderMailer.with(cart_id: @cart).new_order_email.deliver_later
+    flash[:notice] = "Thank you for your order! We'll get contact you soon!"
+    @cart.destroy
+    redirect_to root_path
+  rescue ActiveRecord::RecordNotFound
+    flash.now[:error] = "Your order form had some errors. Please check the form and resubmit."
+    redirect_to root_path
   end
 
 
