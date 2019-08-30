@@ -15,4 +15,11 @@
       </h4>
     </div>
   </div>
+  <div class="columns">
+    <div class="column">
+    </div>
+    <div class="column total has-text-right">
+      <%= button_to 'Check out..', check_out_carts_path(cart_id: @cart), class: 'button is-warning add-to-cart text-center' %>
+    </div>
+  </div>
 </section>

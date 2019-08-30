@@ -63,6 +63,14 @@ class CartsController < ApplicationController
     end
   end
 
+  # check_out_cart/:id
+  def check_out
+    @cart = Cart.find(params[:cart_id])
+    
+  end
+
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_cart
