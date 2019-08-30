@@ -25,7 +25,7 @@ _Joy Julian Gomes_
 - Run "rails server"
 #
 
-# if facing problem
+# If facing problem
   **Install this gem as per their respective github pages**
   - 'simple_form'
   - 'devise'
