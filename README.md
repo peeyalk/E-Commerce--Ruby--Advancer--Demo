@@ -18,7 +18,7 @@ _Joy Julian Gomes_
 - Sqlite3
 - Minimagick
 
-#**Installation**** :**
+#Installation :
 
 - Open Cli in the root folder
 - Run "bundle install"
