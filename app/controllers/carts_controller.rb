@@ -63,7 +63,7 @@ class CartsController < ApplicationController
     end
   end
 
-  # check_out_cart/:id
+  # check_out_cart?cart_id=id
   def check_out
     @cart = Cart.find(params[:cart_id])
     
