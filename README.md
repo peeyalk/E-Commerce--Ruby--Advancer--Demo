@@ -18,12 +18,20 @@ _Joy Julian Gomes_
 - Sqlite3
 - Minimagick
 
-**Installation**** :**
+#**Installation**** :**
 
 - Open Cli in the root folder
 - Run "bundle install"
 - Run "rails server"
+#
 
+# if facing problem
+  **Install this gem as per their respective github pages**
+  - 'simple_form'
+  - 'devise'
+  - 'gravatar_image_tag'
+  - 'carrierwave', '~> 2.0'
+  - 'mini_magick'
 #
 
 
@@ -38,3 +46,4 @@ _Joy Julian Gomes_
 ![](screenshots/7.CheckOutError.png)__
 ![](screenshots/8.OrderPlaced.png)
 
+#
